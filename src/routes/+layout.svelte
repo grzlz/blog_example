@@ -37,7 +37,10 @@
 
 	{@render children()}
 
+	
 	<footer class="mt-auto flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-secondary-100 text-sm text-secondary-600 gap-2">
+
+		
 		<span>&copy; 2025 MyBlog</span>
 		<div class="flex gap-4">
 			<a href="#">Privacy</a>
