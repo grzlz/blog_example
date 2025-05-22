@@ -9,9 +9,9 @@
 <main class="grid grid-cols-1 md:grid-cols-9 p-4 md:p-8 gap-4 bg-gray-50">
 
 	<!-- 📚 Sidebar -->
-	<aside class="md:col-span-2 flex bg-primary-100 p-4 rounded-2xl order-2 md:order-none h-auto self-start w-auto font-complementary">
+	<aside class="md:col-span-2 flex bg-secondary-100 md:bg-primary-100 p-4 rounded-2xl order-2 md:order-none h-auto self-start w-auto font-complementary">
 		<div class="prose break-words">
-			<h3 class="font-bold mb-4 text-primary-500">Artículos recientes</h3>
+			<h3 class="font-bold mb-4 text-primary-400">Artículos recientes</h3>
 			<ul class="space-y-2">
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Posta sdfas asdfsd</a></li>
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 2</a></li>
