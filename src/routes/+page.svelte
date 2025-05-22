@@ -10,10 +10,18 @@
 
 	<!-- 📚 Sidebar -->
 	<aside class="md:col-span-2 flex bg-secondary-100 md:bg-primary-100 p-4 rounded-2xl order-2 md:order-none h-auto self-start w-auto font-complementary">
-		<div class="prose break-words">
+		<div class="break-words">
 			<h3 class="font-bold mb-4 text-primary-400">Artículos recientes</h3>
-			<ul class="space-y-2">
+		<ul class="flex flex-wrap justify-start p-3 gap-6 mx-auto gap-y-2">
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Posta sdfas asdfsd</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 2</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 3</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 4</a></li>
+                				<li><a href="#" class="text-gray-500 hover:text-gray-900">Posta sdfas asdfsd</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 2</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 3</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 4</a></li>
+                				<li><a href="#" class="text-gray-500 hover:text-gray-900">Posta sdfas asdfsd</a></li>
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 2</a></li>
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 3</a></li>
 				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 4</a></li>
