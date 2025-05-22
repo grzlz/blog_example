@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-	<nav class="flex justify-between items-center px-6 py-4 bg-secondary-50 text-secondary-400 sticky top-0 z-50">
+	<nav class="flex justify-between items-center px-6 py-4 bg-secondary-50 text-secondary-600 sticky top-0 z-50">
 						<div class="h-14 w-14 mr-3">
 					<img
 						src="/logo.png"
