@@ -7,13 +7,12 @@
 
 <div class="flex flex-col min-h-screen">
 	<nav class="sticky flex justify-between items-center px-6 py-4 bg-secondary-50 text-secondary-600  top-0 z-10 border-b border-primary-800">
-						<div class="h-14 w-14 mr-3">
-					<img
-						src="/logo.png"
-						alt="Surcos Logo"
-					/>
-				</div>
-		
+	<div class="h-14 w-14 mr-3">
+		<img
+			src="/logo.png"
+			alt="Surcos Logo"
+		/>
+	</div>
 		<!-- Desktop menu -->
 		<ul class="hidden md:flex gap-4">
 			<li class="hover:text-secondary-800">Home</li>
@@ -26,12 +25,40 @@
 			☰
 		</button>
 		{#if mobileMenuOpen}
-			<ul class="absolute top-full left-0 w-full z-20 bg-secondary-100 text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4"
+			<ul class="absolute flex flex-col top-full right-0 z-50 bg-secondary-100 text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4 items-stretch"
 				in:slide={{ duration: 250 }}
 				out:slide={{ duration: 200 }}>
-				<li class="hover:text-secondary-900">Home</li>
-				<li class="hover:text-secondary-900">About</li>
-				<li class="hover:text-secondary-900">Contact</li>
+
+				<li class="inline-block hover:text-secondary-900">
+					<a href="#" class="flex items-center gap-2">
+						<img src="/logo.png" alt="Home" class="h-5 w-5" />
+						<span class="inline-block pt-1">Seguridad</span>
+					</a>
+				</li>
+				<li class="inline-block hover:text-secondary-900">
+					<a href="#" class="flex items-center gap-2">
+						<img src="/logo.png" alt="Home" class="h-5 w-5" />
+						<span class="inline-block pt-1">Justicia y derechos humanos</span>
+					</a>
+				</li>
+				<li class="inline-block hover:text-secondary-900">
+					<a href="#" class="flex items-center gap-2">
+						<img src="/logo.png" alt="Home" class="h-5 w-5" />
+						<span class="inline-block pt-1">Cultura</span>
+					</a>
+				</li>
+				<li class="inline-block hover:text-secondary-900">
+					<a href="#" class="flex items-center gap-2">
+						<img src="/logo.png" alt="Home" class="h-5 w-5" />
+						<span class="inline-block pt-1">Economía</span>
+					</a>
+				</li>
+				<li class="inline-block hover:text-secondary-900 hover:border-b-secondary-900">
+					<a href="#" class="flex items-center gap-2">
+						<img src="/logo.png" alt="Home" class="h-5 w-5" />
+						<span class="inline-block pt-1">Política</span>
+					</a>
+				</li>
 			</ul>
 		{/if}
 	</nav>
@@ -40,10 +67,8 @@
 
 	{@render children()}
 
-	
-	<footer class="mt-auto flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-secondary-100 text-sm text-secondary-600 gap-2">
+	<footer class="mt-auto flex flex-col md:flex-row flex-wrap justify-around items-center px-6 py-4 bg-secondary-100 text-sm text-secondary-600 gap-2">
 
-		
 		<span>&copy; 2025 MyBlog</span>
 		<div class="flex gap-4">
 			<a href="#">Privacy</a>
