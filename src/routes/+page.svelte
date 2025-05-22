@@ -1,4 +1,4 @@
-<header class="text-center bg-green-50 p-6">
+<header class="text-center bg-secondary-900 p-6">
 	<img src="/header.png" alt="Surcos Logo" class="mx-auto mb-12 w-72 md:w-96 max-w-full h-auto drop-shadow-lg transition-transform duration-300 hover:scale-105" />
 </header>
 
@@ -22,7 +22,7 @@
 
 	<!-- ✍️ Main Blog Article -->
 	<article class="md:col-span-6">
-		<h1 class="text-3xl font-bold mb-4 text-green-50">Saludos cordiales</h1>
+		<h1 class="text-3xl font-bold mb-4 text-secondary-900">Saludos cordiales</h1>
 		<p class="text-gray-400 mb-4">By John Doe – May 2025</p>
 
 		<div class="columns-1 md:columns-2 gap-6 text-justify break-words text-gray-500">
