@@ -1,3 +1,7 @@
+<script>
+    import Newspaper from "$lib/Newspaper.svelte";
+</script>
+
 <header class="text-center bg-secondary-900 p-6">
 	<img src="/header.png" alt="Surcos Logo" class="mx-auto mb-12 w-72 md:w-96 max-w-full h-auto drop-shadow-lg transition-transform duration-300 hover:scale-105" />
 </header>
@@ -39,3 +43,5 @@
 		</div>
 	</article>
 </main>
+
+<Newspaper  />
