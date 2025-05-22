@@ -9,10 +9,10 @@
 		<div>
 			<h2 class="font-bold mb-4 text-primary-500">Recent Posts</h2>
 			<ul class="space-y-2">
-				<li><a href="#" class="text-gray-700 hover:underline hover:text-amber-100">Post Title 1</a></li>
-				<li><a href="#" class="text-gray-700 hover:underline hover:text-amber-100">Post Title 2</a></li>
-				<li><a href="#" class="text-gray-700 hover:underline hover:text-amber-100">Post Title 3</a></li>
-				<li><a href="#" class="text-gray-700 hover:underline hover:text-amber-100">Post Title 4</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 1</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 2</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 3</a></li>
+				<li><a href="#" class="text-gray-500 hover:text-gray-900">Post Title 4</a></li>
 			</ul>
 		</div>
 	</aside>
