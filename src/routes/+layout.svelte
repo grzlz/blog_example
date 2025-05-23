@@ -35,8 +35,8 @@
 		</nav>
 		{#if mobileMenuOpen}
 		<ul class="flex flex-col bg-secondary-100 font-primary text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4 space-y-3"
-			in:slide={{ duration: 250 }}
-			out:slide={{ duration: 300 }}>
+			in:slide={{ duration: 400 }}
+			out:slide={{ duration: 400 }}>
 
 			{#each links as link}
 				<li>
