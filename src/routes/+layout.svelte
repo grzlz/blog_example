@@ -3,65 +3,51 @@
 	import '../app.css';
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
+
+	let links = [
+		{ text: 'Seguridad', href: '#' },
+		{ text: 'Economía', href: '#' },
+		{ text: 'Política', href: '#' },
+		{ text: 'Cultura', href: '#' },
+		{ text: 'Justicia y derechos humanos', href: '#' }
+	] 
 </script>
 
 <div class="flex flex-col min-h-screen">
-	<nav class="sticky flex justify-between items-center px-6 py-4 bg-secondary-50 text-secondary-600  top-0 z-10 border-b border-primary-800">
-	<div class="h-14 w-14 mr-3">
-		<img
-			src="/logo.png"
-			alt="Surcos Logo"
-		/>
-	</div>
-		<!-- Desktop menu -->
-		<ul class="hidden md:flex gap-4">
-			<li class="hover:text-secondary-800">Home</li>
-			<li class="hover:text-secondary-800">About</li>
-			<li class="hover:text-secondary-800">Contact</li>
-		</ul>
-
-		<!-- Mobile menu button -->
-		<button class="md:hidden text-3xl" onclick={() => mobileMenuOpen = !mobileMenuOpen}>
-			☰
-		</button>
-		{#if mobileMenuOpen}
-			<ul class="absolute flex flex-col top-full right-0 z-50 bg-secondary-100 text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4 items-stretch"
-				in:slide={{ duration: 250 }}
-				out:slide={{ duration: 200 }}>
-
-				<li class="inline-block hover:text-secondary-900">
-					<a href="#" class="flex items-center gap-2">
-						<img src="/logo.png" alt="Home" class="h-5 w-5" />
-						<span class="inline-block pt-1">Seguridad</span>
-					</a>
-				</li>
-				<li class="inline-block hover:text-secondary-900">
-					<a href="#" class="flex items-center gap-2">
-						<img src="/logo.png" alt="Home" class="h-5 w-5" />
-						<span class="inline-block pt-1">Justicia y derechos humanos</span>
-					</a>
-				</li>
-				<li class="inline-block hover:text-secondary-900">
-					<a href="#" class="flex items-center gap-2">
-						<img src="/logo.png" alt="Home" class="h-5 w-5" />
-						<span class="inline-block pt-1">Cultura</span>
-					</a>
-				</li>
-				<li class="inline-block hover:text-secondary-900">
-					<a href="#" class="flex items-center gap-2">
-						<img src="/logo.png" alt="Home" class="h-5 w-5" />
-						<span class="inline-block pt-1">Economía</span>
-					</a>
-				</li>
-				<li class="inline-block hover:text-secondary-900 hover:border-b-secondary-900">
-					<a href="#" class="flex items-center gap-2">
-						<img src="/logo.png" alt="Home" class="h-5 w-5" />
-						<span class="inline-block pt-1">Política</span>
-					</a>
-				</li>
+	<nav class="sticky flex justify-between items-center px-6 py-4 bg-secondary-50 text-secondary-600  top-0 z-10 ">
+		<div class="h-14 w-14 mr-3">
+			<img
+				src="/logo.png"
+				alt="Surcos Logo"
+			/>
+		</div>
+			<!-- Desktop menu -->
+			<ul class="hidden md:flex gap-4">
+				<li class="hover:text-secondary-800">Home</li>
+				<li class="hover:text-secondary-800">About</li>
+				<li class="hover:text-secondary-800">Contact</li>
 			</ul>
+
+			<!-- Mobile menu button -->
+			<button class="md:hidden text-3xl hover:text-secondary-700" onclick={() => mobileMenuOpen = !mobileMenuOpen}>
+				☰
+			</button>
+		</nav>
+		{#if mobileMenuOpen}
+		<ul class="flex flex-col bg-secondary-100 font-primary text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4 space-y-3"
+			in:slide={{ duration: 250 }}
+			out:slide={{ duration: 300 }}>
+
+			{#each links as link}
+				<li>
+					<a href={link.href} class="flex items-center justify-between gap-3 p-2 rounded-md hover:text-secondary-900 hover:bg-secondary-200 transition">
+						<span class="pt-0.5">{link.text}</span>
+						<img src="/logo.png" alt={link.text} class="h-5 w-5" />
+					</a>
+				</li>
+			{/each}
+		</ul>
 		{/if}
-	</nav>
 
 	<!-- Mobile dropdown menu -->
 
