@@ -21,18 +21,20 @@
 				alt="Surcos Logo"
 			/>
 		</div>
-			<!-- Desktop menu -->
-			<ul class="hidden md:flex gap-4">
-				<li class="hover:text-secondary-800">Home</li>
-				<li class="hover:text-secondary-800">About</li>
-				<li class="hover:text-secondary-800">Contact</li>
-			</ul>
 
-			<!-- Mobile menu button -->
-			<button class="md:hidden text-3xl hover:text-secondary-700" onclick={() => mobileMenuOpen = !mobileMenuOpen}>
-				☰
-			</button>
-		</nav>
+		<ul class="hidden md:flex gap-4">
+			<li class="hover:text-secondary-800">Home</li>
+			<li class="hover:text-secondary-800">About</li>
+			<li class="hover:text-secondary-800">Contact</li>
+		</ul>
+		<button class="md:hidden text-secondary-700 hover:text-secondary-900" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Hamburger">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-7 w-7 transition-transform duration-300" class:rotate-90={mobileMenuOpen} >
+				<line x1="4" y1="6" x2="20" y2="6" />
+				<line x1="4" y1="12" x2="20" y2="12" />
+				<line x1="4" y1="18" x2="20" y2="18" />
+			</svg>
+		</button>
+	</nav>
 		{#if mobileMenuOpen}
 		<ul class="flex flex-col bg-secondary-100 font-primary text-secondary-700 md:hidden shadow-lg rounded-b-lg p-4 space-y-3"
 			in:slide={{ duration: 400 }}
