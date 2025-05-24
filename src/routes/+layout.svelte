@@ -28,7 +28,7 @@
 			<li class="hover:text-secondary-800">Contact</li>
 		</ul>
 		<button class="md:hidden text-secondary-700 hover:text-secondary-900" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Hamburger">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-7 w-7 transition-transform duration-150 will-change-transform" class:rotate-90={mobileMenuOpen} >
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-6 w-6" >
 				<line x1="4" y1="6" x2="20" y2="6" />
 				<line x1="4" y1="12" x2="20" y2="12" />
 				<line x1="4" y1="18" x2="20" y2="18" />
