@@ -11,6 +11,8 @@
 		{ text: 'Cultura', href: '#' },
 		{ text: 'Justicia y derechos humanos', href: '#' }
 	] 
+
+	    const year = new Date().getFullYear();
 </script>
 
 <div class="flex flex-col min-h-screen">
@@ -56,7 +58,7 @@
 	{@render children()}
 
 
-<footer class="bg-gray-900 text-gray-300 mt-12">
+<footer class="bg-gray-50 text-gray-300">
   <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
     
     <!-- About Us -->
