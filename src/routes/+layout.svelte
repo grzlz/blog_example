@@ -58,13 +58,13 @@
 	{@render children()}
 
 
-<footer class="bg-gray-50 text-gray-300">
+<footer class="bg-primary-50 text-gray-300 font-primary">
   <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
     
     <!-- About Us -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">About Us</h2>
-      <p class="text-sm leading-relaxed">
+      <h2 class="text-xl font-bold mb-4 text-primary-400">About Us</h2>
+      <p class="text-sm leading-relaxed text-gray-900">
         We are a collective of designers, developers, and thinkers passionate about creating beautiful and efficient web experiences.
       </p>
     </div>
@@ -73,7 +73,7 @@
 
     <!-- Social Media -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">Follow Us</h2>
+      <h2 class="text-xl font-bold mb-4 text-primary-400">Follow Us</h2>
       <div class="flex gap-4">
         <a href="#" aria-label="Twitter" class="hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,8 +99,8 @@
 
     <!-- Newsletter -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">Newsletter</h2>
-      <p class="text-sm mb-4">Stay updated with our latest posts and insights.</p>
+      <h2 class="text-xl font-bold mb-4 text-primary-400">Newsletter</h2>
+      <p class="text-sm mb-4 text-gray-900">Stay updated with our latest posts and insights.</p>
       <form class="flex flex-col sm:flex-row gap-2">
         <input
           type="email"
