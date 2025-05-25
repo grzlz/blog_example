@@ -63,17 +63,37 @@
     
     <!-- About Us -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-primary-400">About Us</h2>
-      <p class="text-sm leading-relaxed text-gray-900">
-        We are a collective of designers, developers, and thinkers passionate about creating beautiful and efficient web experiences.
+      <h2 class="text-xl font-bold mb-4 text-primary-500">¿Quién chota sos?</h2>
+      <p class="text-sm leading-relaxed text-gray-900 font-secondary">
+		Somos un grupo de jóvenes profesionistas y académicos que creen que las cosas pueden ser distintas.
       </p>
     </div>
 
-    <!-- Navigation -->
 
-    <!-- Social Media -->
+	
+    <!-- Newsletter -->
+<div>
+  <h2 class="text-lg sm:text-xl font-bold text-primary-500 font-primary mb-2">Trade offer:</h2>
+  <p class="text-sm sm:text-base text-gray-900 font-secondary mb-3">
+    Si nos das tu correo, te damos acceso a nuestro resumen semanal de noticias.
+  </p>
+  <form class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <input
+      type="email"
+      placeholder="Tu correo electrónico"
+      class="flex-1 px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
+    />
+    <button
+      type="submit"
+      class="bg-primary-400 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm whitespace-nowrap transition">
+      Suscribirme al newsletter
+    </button>
+  </form>
+</div>
+
+	<!-- Social Media -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-primary-400">Follow Us</h2>
+      <h2 class="text-xl font-bold mb-4 text-primary-400">Nuestras redes sociales</h2>
       <div class="flex gap-4">
         <a href="#" aria-label="Twitter" class="hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,30 +116,13 @@
         </a>
       </div>
     </div>
+  
+</div>
 
-    <!-- Newsletter -->
-    <div>
-      <h2 class="text-xl font-bold mb-4 text-primary-400">Newsletter</h2>
-      <p class="text-sm mb-4 text-gray-900">Stay updated with our latest posts and insights.</p>
-      <form class="flex flex-col sm:flex-row gap-2">
-        <input
-          type="email"
-          placeholder="Your email"
-          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
-        />
-        <button
-          type="submit"
-          class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md transition"
-        >
-          Subscribe
-        </button>
-      </form>
-    </div>
-  </div>
-
+  
   <!-- Copyright -->
   <div class="border-t border-gray-700 text-center text-sm py-6 text-gray-400">
-    © {year} YourSiteName. All rights reserved.
+    © {year} icarus.mx
   </div>
 </footer>
 
