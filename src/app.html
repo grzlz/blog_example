@@ -1,12 +1,37 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div>%sveltekit.body%</div>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Viewport & Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+
+    <!-- General Metadata -->
+    <title>Surcos</title>
+    <meta name="description" content="Surcos es una revista digital sobre tecnología, política y cultura." />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Surcos />
+    <meta property="og:description" content="Revista digital sobre política, economía y cultura. " />
+    <meta property="og:image" content="https://surcos.mx/header.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://surcos.mx" />
+    <meta property="og:site_name" content="Surcos" />
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Surcos — Cultura y Datos" />
+    <meta name="twitter:description" content="Revista digital sobre tecnología, política y cultura." />
+    <meta name="twitter:image" content="https://surcos.mx/header.png" />
+
+    <!-- Inject page-specific tags from SvelteKit -->
+    %sveltekit.head%
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div>%sveltekit.body%</div>
+  </body>
 </html>
