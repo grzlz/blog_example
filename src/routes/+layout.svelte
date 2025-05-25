@@ -5,11 +5,12 @@
 	let mobileMenuOpen = $state(false);
 
 	let links = [
-		{ text: 'Seguridad', href: '#' },
-		{ text: 'Economía', href: '#' },
-		{ text: 'Política', href: '#' },
-		{ text: 'Cultura', href: '#' },
-		{ text: 'Justicia y derechos humanos', href: '#' }
+		{ text: 'Justicia', href: '#', logo: "/logo_justicia.png"  },
+		{ text: 'Desarrollo', href: '#', logo: "/logo_desarrollo.png" },
+		{ text: 'Cultura', href: '#', logo: "/logo_cultura.png" },
+		{ text: 'Economía', href: '#', logo: "/logo_economia.png" },
+		{ text: 'Política', href: '#', logo: "/logo_politica.png" },
+		{ text: 'Medio ambiente', href: '#', logo: "/logo_medio_ambiente.png" },
 	] 
 
 	    const year = new Date().getFullYear();
@@ -46,7 +47,7 @@
 				<li>
 					<a href={link.href} class="flex items-center justify-between gap-3 p-2 rounded-md hover:text-secondary-900 hover:bg-secondary-200 transition">
 						<span class="pt-0.5">{link.text}</span>
-						<img src="/logo.png" alt={link.text} class="h-5 w-5" />
+						<img src={link.logo} alt={link.text} class="h-5 w-5" />
 					</a>
 				</li>
 			{/each}
@@ -120,10 +121,23 @@
 </div>
 
   
-  <!-- Copyright -->
-  <div class="border-t border-gray-700 text-center text-sm py-6 text-gray-400">
-    © {year} icarus.mx
+<div class="border-t border-primary-300 text-sm text-gray-300 px-4 py-6">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+    
+    <!-- Left section: © + logo + year -->
+    <div class="flex items-center">
+      <span class="text-sm -mr-1">©</span>
+      <img src="/header.png" alt="Surcos logo" class="w-[90px] h-auto -ml-1" />
+      <span class="-ml-1 mt-0.5">{year}</span>
+    </div>
+    
+    <!-- Right section: Attribution -->
+    <p class="text-center sm:text-right">
+      Desarrollado por <a href="http://www.icarus.mx" class="hover:text-white ">icarus.mx</a>
+    </p>
+
   </div>
-</footer>
+</div>
+
 
 </div>
